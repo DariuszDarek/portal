@@ -1,0 +1,20 @@
+.alert {
+    border: 1px solid #aaa;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.success {
+    border-color: green;
+    background-color: lightgreen;
+}
+
+.error {
+    border-color: red;
+    background-color: indianred;
+}
+
+.alert span {
+    display: inline-block;
+    margin-right: 1px;
+}

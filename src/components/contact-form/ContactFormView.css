@@ -1,0 +1,16 @@
+.form-wrapper {
+    max-width: 450px;
+}
+
+form > * {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    margin: 10px 0;
+}
+
+form button {
+    max-width: 250px;
+}

@@ -1,26 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
+import {BrowserRouter as Router, Route} from 'react-router-dom';
 import './App.css';
+import Navbar from "./components/core/Navbar";
+import BlogView from "./components/blog/BlogView";
+import ContactFormView from "./components/contact-form/ContactFormView";
+import BeerAppView from "./components/beer-app/BeerAppView";
+import BlogPostView from "./components/blog/BlogPostView";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <Router>
+            <Navbar/>
+            <div className="content-wrapper">
+                <Route exact path="/" component={ContactFormView}/>
+                <Route exact path="/blog" component={BlogView}/>
+                <Route path="/blog/:id" component={BlogPostView}/>
+                <Route path="/beer-api" component={BeerAppView}/>
+            </div>
+        </Router>
+    );
 }
 
 export default App;

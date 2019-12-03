@@ -1,0 +1,24 @@
+nav {
+    background-color: #fafafa;
+    border: 1px solid #eee;
+    padding: 20px;
+}
+
+nav ul {
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 15px;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: dodgerblue;
+}
+
+nav ul li a.is-active {
+    color: midnightblue;
+}

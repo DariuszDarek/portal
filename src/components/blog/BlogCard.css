@@ -1,0 +1,15 @@
+.blog-card {
+    box-sizing: border-box;
+    width: 48%;
+    padding: 5%;
+    display: inline-block;
+    border:1px solid #eee;
+    margin-bottom: 5%;
+    background-color: #fafafa;
+    color: #000;
+    text-decoration: none;
+}
+
+.blog-card img {
+    max-width: 100%;
+}
