@@ -59,7 +59,7 @@ class ContactFormView extends Component {
                     )}
                     {showError && (
                         <Alert status="error">
-                            <span>✖</span> Please fill all the inputs!
+                            <span>✖</span> Please fill all the fields!
                         </Alert>
                     )}
                 </div>
