@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-import articles from '../../articles'
-import './BlogPostView.css';
 import {Link} from "react-router-dom";
+import './BlogPostView.css';
+import articles from '../../mockData/articles'
 
 class BlogPostView extends Component {
     state = {

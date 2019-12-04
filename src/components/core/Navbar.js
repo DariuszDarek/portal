@@ -9,6 +9,7 @@ function Navbar() {
                 <li><NavLink activeClassName="is-active" to="/" exact={true}>Contact form</NavLink></li>
                 <li><NavLink activeClassName="is-active" to="/blog">Blog</NavLink></li>
                 <li><NavLink activeClassName="is-active" to="/beer-app">Beer app</NavLink></li>
+                <li><NavLink activeClassName="is-active" to="/login">Login</NavLink></li>
             </ul>
         </nav>
     );

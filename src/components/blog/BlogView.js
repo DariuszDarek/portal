@@ -1,6 +1,6 @@
 import React from 'react';
+import articles from '../../mockData/articles';
 import BlogCard from "./BlogCard";
-import articles from '../../articles';
 
 function BlogView() {
     return (

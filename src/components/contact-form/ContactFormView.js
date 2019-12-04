@@ -1,23 +1,22 @@
 import React, {Component} from 'react';
 import './ContactFormView.css'
-import Alert from "./Alert";
+import Alert from "../shared/Alert";
 
 class ContactFormView extends Component {
     state = {
         name: '',
         surname: '',
         msg: '',
-        showSuccess: false,
-        showError: false
+        msgSent: null
     };
 
     handleSubmit = e => {
         e.preventDefault();
         const {name, surname, msg} = this.state;
         if (name && surname && msg) {
-            this.setState({showSuccess: true, showError: false});
+            this.setState({msgSent: true, showError: false});
         } else {
-            this.setState({showSuccess: false, showError: true})
+            this.setState({msgSent: false, showError: true})
         }
     };
 
@@ -34,11 +33,11 @@ class ContactFormView extends Component {
                 break;
             default:
         }
-        this.setState({showSuccess: false, showError: false});
+        this.setState({msgSent: null, showError: false});
     };
 
     render() {
-        const {name, surname, msg, showSuccess, showError} = this.state;
+        const {name, surname, msg, msgSent} = this.state;
         return (
             <>
                 <h1>Contact form</h1>
@@ -52,12 +51,12 @@ class ContactFormView extends Component {
                         <button type="submit">Send</button>
                     </form>
 
-                    {showSuccess && (
+                    {msgSent && (
                         <Alert status="success">
                             <span>✔</span> Message successfully sent!
                         </Alert>
                     )}
-                    {showError && (
+                    {msgSent === false && (
                         <Alert status="error">
                             <span>✖</span> Please fill all the fields!
                         </Alert>

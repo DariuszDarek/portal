@@ -7,6 +7,7 @@ import ContactFormView from "./components/contact-form/ContactFormView";
 import BeerAppView from "./components/beer-app/BeerAppView";
 import BlogPostView from "./components/blog/BlogPostView";
 import SingleBeerView from "./components/beer-app/SingleBeerView";
+import LoginView from "./components/login/LoginView";
 
 function App() {
     return (
@@ -18,6 +19,7 @@ function App() {
                 <Route path="/blog/:id" component={BlogPostView}/>
                 <Route path="/beer-app" exact component={BeerAppView}/>
                 <Route path="/beer-app/:id" component={SingleBeerView}/>
+                <Route path="/login" component={LoginView}/>
             </div>
         </Router>
     );
