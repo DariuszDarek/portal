@@ -9,6 +9,7 @@ import BlogPostView from "./components/blog/BlogPostView";
 import SingleBeerView from "./components/beer-app/SingleBeerView";
 import LoginView from "./components/login/LoginView";
 import TodoView from "./components/todo/TodoView";
+import Todo2View from "./components/todo2/Todo2View";
 
 function App() {
     return (
@@ -22,6 +23,7 @@ function App() {
                 <Route path="/beer-app/:id" component={SingleBeerView}/>
                 <Route path="/login" component={LoginView}/>
                 <Route path="/todo" component={TodoView}/>
+                <Route path="/todo2" component={Todo2View}/>
             </div>
         </Router>
     );

@@ -30,6 +30,7 @@ class TodoView extends Component {
         return (
             <div style={{maxWidth: '450px'}}>
                 <h1>To-do list</h1>
+                <p>Basic one-component to-do list</p>
 
                 <form onSubmit={this.handleSubmit}>
                     <input type="text" id="username" value={todoInput} placeholder="What you have to do?"
