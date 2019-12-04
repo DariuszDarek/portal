@@ -26,6 +26,7 @@ class LoginView extends Component {
         e.preventDefault();
         const {username, password} = this.state;
         this.checkCredentials(username, password);
+        this.setState({username: '', password: ''});
     };
 
     checkCredentials = (u, p) => {

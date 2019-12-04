@@ -10,6 +10,7 @@ function Navbar() {
                 <li><NavLink activeClassName="is-active" to="/blog">Blog</NavLink></li>
                 <li><NavLink activeClassName="is-active" to="/beer-app">Beer app</NavLink></li>
                 <li><NavLink activeClassName="is-active" to="/login">Login</NavLink></li>
+                <li><NavLink activeClassName="is-active" to="/todo">To-do list</NavLink></li>
             </ul>
         </nav>
     );
